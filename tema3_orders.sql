@@ -41,7 +41,7 @@ CREATE TABLE `orders` (
 
 LOCK TABLES `orders` WRITE;
 /*!40000 ALTER TABLE `orders` DISABLE KEYS */;
-INSERT INTO `orders` VALUES (1,'2019-10-29','2019-11-15','dispatched','notify me when close to arrival',1),(2,'2021-09-29','2021-12-10','dispatched','no comments',2),(3,'2022-03-05','2022-05-12','waiting','nothing',3);
+INSERT INTO `orders` VALUES (1,'2019-10-29','2019-11-15','dispatched','notify me when close to arrival',1),(2,'2021-09-29','2021-12-10','on the way','no comments',2),(3,'2022-03-05','2022-05-12','waiting','nothing',3),(4,'2022-07-27','2022-07-26','unshipped','nimic',3),(5,'2022-07-19','2022-07-27','on the way','new order from homework',5),(6,'2022-07-25','2022-07-27','on the way',NULL,5);
 /*!40000 ALTER TABLE `orders` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -54,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-07-26 21:22:10
+-- Dump completed on 2022-07-27 18:43:57

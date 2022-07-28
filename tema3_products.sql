@@ -38,7 +38,7 @@ CREATE TABLE `products` (
 
 LOCK TABLES `products` WRITE;
 /*!40000 ALTER TABLE `products` DISABLE KEYS */;
-INSERT INTO `products` VALUES ('1234','boots','natural leather custom boots',5,175.62);
+INSERT INTO `products` VALUES ('1234','boots','natural leather custom boots',5,175.62),('1235','jacket','authentic cow-leather',10,350.00),('1236','jeans','denim',20,70.00),('1237','hat','cotton',15,60.00),('1238','sunglasses','raybans',35,100.00),('1239','shirt','cotton',30,50.00),('1240','scarf','cashmere',10,100.00),('1241','belt','cowhide leather',12,110.00),('1242','gun hoster','hard leather',0,130.00),('1243','gloves','deerskin leather',9,120.00);
 /*!40000 ALTER TABLE `products` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-07-26 21:22:10
+-- Dump completed on 2022-07-27 18:43:57

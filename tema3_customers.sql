@@ -42,7 +42,7 @@ CREATE TABLE `customers` (
 
 LOCK TABLES `customers` WRITE;
 /*!40000 ALTER TABLE `customers` DISABLE KEYS */;
-INSERT INTO `customers` VALUES (1,'MihaiEminescu','Eminescu','Mihai','0741381085','Str. Centrala, Ipotesti','Botosani','123958','Romania'),(2,'MihaiEnache','Enache','Mihai','0741311685','Str. Centrala, Bacau','Bacau','143958','Romania'),(3,'SalvadorDali','Salvador','Dali','0238311685','Str. Principala, Italia','Italia','483958','Italia');
+INSERT INTO `customers` VALUES (1,'MihaiEminescu','Eminescu','Mihai','0741381085','Str. Centrala, Ipotesti','Botosani','123958','Romania'),(2,'MihaiEnache','Enache','Mihai','0741311685','Str. Centrala, Bacau','Bacau','143958','Romania'),(3,'SalvadorDali','Salvador','Dali','0238311685','Str. Principala, Italia','Italia','483958','Italia'),(4,'enache','da','mihAI','0721982713','adresa','bucuresti',NULL,'romania'),(5,'DanStuparu','Stuparu','Dan','0729759123','Str. Unirii, Craiova,Dolj','Craiova','149297','Romania');
 /*!40000 ALTER TABLE `customers` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -55,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-07-26 21:22:10
+-- Dump completed on 2022-07-27 18:43:57
