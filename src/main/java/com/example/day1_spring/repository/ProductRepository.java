@@ -5,6 +5,6 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface ProductRepository extends CrudRepository<Products, Integer> {
 
-    public Products getById(String productId);
+    public Products getById(Products productId);
     public void delete(Products product);
 }
