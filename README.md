@@ -9,7 +9,7 @@ de ex. vreau sa fac un branch nou in care sa pun folderul tema2 din db cloud sch
 3. git add . 
 4. git commit -m "first commit"
 5. git branch -M tema2
-6. git remote add origin https://github.com/VladRaileanu98/Cloud-School
+6. git remote add origin https://github.com/VladRaileanu98/Cloud-School_public
 7. git push -u origin tema2 
 7*. git push -f origin tema2
 
