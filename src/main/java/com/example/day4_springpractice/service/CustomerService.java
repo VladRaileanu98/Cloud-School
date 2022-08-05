@@ -1,8 +1,12 @@
 package com.example.day4_springpractice.service;
 
+import com.example.day4_springpractice.converter.CustomerConverter;
+import com.example.day4_springpractice.dto.CustomerDTO;
 import com.example.day4_springpractice.model.Customer;
 import com.example.day4_springpractice.repository.CustomerRepository;
 import lombok.RequiredArgsConstructor;
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,6 +15,19 @@ import java.util.List;
 @RequiredArgsConstructor
 public class CustomerService {
     private final CustomerRepository customerRepository;
+
+    //DTO
+    @Autowired
+    CustomerConverter customerConverter;
+
+    //save customer service for DTO
+    public CustomerDTO saveCustomer(CustomerDTO customerDTO){
+        Customer customer = customerConverter.convertDtoToEntity(customerDTO);
+        customer = customerRepository.save(customer);
+        return customerConverter.convertEntityToDto(customer);
+    }
+    //DTO
+
     public List<Customer> getCustomers(){
         return customerRepository.findAll();
     }
