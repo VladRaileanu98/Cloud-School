@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"> xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div th:each="customer: ${customerAll}">
+    <p th:text="'id:'+${customer.getId()} + '. /Username: ' + ${customer.getUsername()} + ' /City: ' + ${customer.getCity}+ ' /Country: ' + ${customer.getCountry}"></p>
+</div>
+<div th:each="customer: ${customerById}">
+    <p th:text="${customer.getUsername()} + ' ' + ${customer.getCity}+ ' ' + ${customer.getCountry}"></p>
+</div>
+<div th:each="customer: ${customerByUsername}">
+    <p th:text="${customer.getUsername()} + ' ' + ${customer.getCity}+ ' ' + ${customer.getCountry}"></p>
+</div>
+<div th:each="customer: ${customerByCity}">
+    <p th:text="${customer.getUsername()} + ' ' + ${customer.getCity}+ ' ' + ${customer.getCountry}"></p>
+</div>
+<div th:each="customer: ${customerByCountry}">
+    <p th:text="${customer.getUsername()} + ' ' + ${customer.getCity}+ ' ' + ${customer.getCountry}"></p>
+</div>
+
+</body>
+</html>
